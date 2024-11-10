@@ -16,7 +16,9 @@ This guide provides a step-by-step setup for a Spring Boot application that send
 RabbitMQ is a messaging broker that allows applications to communicate with each other through messages. In this setup:
 
 ## Setup RabbitMQ using following docker command
+```cmd
 docker run -d --hostname rabbitmq-host --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3-management
+```
 
 
 Producer: Sends JSON messages to an exchange.
